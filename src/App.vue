@@ -281,12 +281,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-/* @viewport {
-  width: 700px;
-  zoom: 1.0;
-} */
 .clickable {
   cursor: pointer;
+}
+/* Basic mobile styling */
+@media screen and (max-width: 640px) {
+  /* hide positional tables */
+  .child {
+    display: none;
+  }
 }
 /* banner */
 .hero {
@@ -367,12 +370,5 @@ td {
 }
 tr:hover {
   background-color: #f5f5f5;
-}
-/* Basic mobile styling */
-@media screen and (max-width: 640px) {
-  /* hide positional tables */
-  .posTable {
-    display: none;
-  }
 }
 </style>
