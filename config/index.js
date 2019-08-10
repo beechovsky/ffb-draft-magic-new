@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: 'ffb-draft-magic-new',
     proxyTable: {},
 
     // Various Dev Server settings

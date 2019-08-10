@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <section class="hero">
       <header>
         <br>
@@ -16,7 +15,7 @@
       <div v-if="this.rankings.length > 0">
         <div class="orange">
           <label><b>Search Rankings:</b></label>
-          <input type="text" v-model="search" placeholder="Player Name"/>
+          <input type="text" autocorrect="off" v-model="search" placeholder="Player Name"/>
         </div>
       </div>
     </div>
@@ -282,6 +281,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+/* @viewport {
+  width: 700px;
+  zoom: 1.0;
+} */
 .clickable {
   cursor: pointer;
 }
@@ -364,5 +367,12 @@ td {
 }
 tr:hover {
   background-color: #f5f5f5;
+}
+/* Basic mobile styling */
+@media screen and (max-width: 640px) {
+  /* hide positional tables */
+  .posTable {
+    display: none;
+  }
 }
 </style>
